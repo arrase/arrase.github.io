@@ -2,66 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Arrase</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-    <link href="css/footer-distributed.css" rel="stylesheet" type="text/css"/>
-    <link href="css/custom.min.css" rel="stylesheet" type="text/css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrase - Open Source Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-<div class="jumbotron">
-    <div class="container">
-        <div class="row text-center">
-            <a href="/"><img id="main-logo" src="img/ripple.png"/></a>
-            <p class="lead">Life is a personal project</p>
-            <a class="btn btn-info" href="https://www.paypal.me/OnPanic">Donate</a>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Arrase<span>Projects</span></a>
+                <ul class="nav-links">
+                    <li><a href="https://github.com/arrase" target="_blank"><i class="fab fa-github"></i> GitHub Profile</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-md-4">
-            <h2>On Panic</h2>
-            <p>A collection of tools for help you in panic situations.</p>
-            <p><a class="btn btn-default" href="https://www.onpanic.org/" role="button">View details »</a></p>
-        </div>
-        <div class="col-md-4">
-            <h2>RaspiDucky</h2>
-            <p>A Keystroke Injection Tool</p>
-            <p><a class="btn btn-default" href="https://arrase.github.io/Raspiducky/" role="button">View details »</a></p>
-        </div>
-        <div class="col-md-4">
-            <h2>Onion-Router</h2>
-            <p>Easy onion router setup for Raspberry Pi </p>
-            <p><a class="btn btn-default" href="https://github.com/arrase/Onion-Router" role="button">View details »</a></p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Onioncat for Android</h2>
-            <p>An Anonymous VPN-Adapter</p>
-            <p><a class="btn btn-default" href="https://github.com/arrase/Onioncat-Android" role="button">View details »</a></p>
-        </div>
-        <div class="col-md-4">
-            <h2>SimpleDork</h2>
-            <p>Simple google dork that stores data in MySQL</p>
-            <p><a class="btn btn-default" href="https://github.com/arrase/SimpleDork" role="button">View details »</a></p>
-        </div>
-        <div class="col-md-4">
-            <h2>SSHd</h2>
-            <p>SSHd Manager for LineageOs</p>
-            <p><a class="btn btn-default" href="https://github.com/arrase/SSHd" role="button">View details »</a></p>
-        </div>
-    </div>
-</div>
+    </header>
 
-<footer class="footer-distributed">
-    <div class="footer-left">
-        <h3>Can i contact you?</h3>
-        <ul>
-            <li><a href="mailto:arrase@gmail.com">arrase at gmail</a></li>
-        </ul>
+    <div class="hero">
+        <div class="container">
+            <h1>Life is a personal project.</h1>
+            <p>A collection of tools and applications built with passion.</p>
+        </div>
     </div>
-</footer>
+
+    <section id="projects">
+        <div class="container">
+            <div class="features-grid">
+                <!-- 1. ollama-agent -->
+                <a href="/ollama-agent" class="feature-card">
+                    <i class="fas fa-robot feature-icon"></i>
+                    <h3>Ollama Agent</h3>
+                    <p>A powerful command-line tool (CLI and REPL) that allows you to interact with local AI models through an Ollama-compatible API. Features tool support, vision, and memory.</p>
+                </a>
+
+                <!-- 2. OCR -->
+                <a href="/OCR" class="feature-card">
+                    <i class="fas fa-file-pdf feature-icon"></i>
+                    <h3>OCR</h3>
+                    <p>Converts a PDF to text (Markdown) by rendering each page to an image and sending it through the deepseek-ocr model served by Ollama.</p>
+                </a>
+
+                <!-- 3. terraform-graphx -->
+                <a href="/terraform-graphx" class="feature-card">
+                    <i class="fas fa-project-diagram feature-icon"></i>
+                    <h3>Terraform GraphX</h3>
+                    <p>A CLI tool that generates dependency graphs from your Terraform infrastructure and stores them in Neo4j for powerful querying and visualization.</p>
+                </a>
+
+                <!-- 4. delayed-shutdown -->
+                <a href="/delayed-shutdown" class="feature-card">
+                    <i class="fas fa-power-off feature-icon"></i>
+                    <h3>Delayed Shutdown</h3>
+                    <p>A simple GUI application to shut down your computer after a set of specified processes have finished executing.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Arrase. All rights reserved.</p>
+            <p>
+                <a href="https://github.com/arrase" target="_blank">GitHub</a>
+            </p>
+        </div>
+    </footer>
+
 </body>
 </html>
