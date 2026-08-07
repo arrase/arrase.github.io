@@ -47,6 +47,12 @@ A collection of tools and applications built with passion.
     <p>A modern, location-aware Android app for geofenced reminders, featuring a Jetpack Compose UI, interactive maps, and system-level Jetpack AppFunctions for assistant-driven control.</p>
   </a>
 
+  <a href="/atomic-explorer" class="feature-card">
+    <i class="fas fa-atom feature-icon"></i>
+    <h3>Atomic Explorer</h3>
+    <p>A desktop application for Linux designed for science popularization. Visually explore the atomic structure at different levels of complexity.</p>
+  </a>
+
   <a href="/openclaw-voice" class="feature-card">
     <i class="fas fa-microphone-lines feature-icon"></i>
     <h3>OpenClaw Voice</h3>
