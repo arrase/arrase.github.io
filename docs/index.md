@@ -50,7 +50,7 @@ A collection of tools and applications built with passion.
   <a href="/atomic-explorer" class="feature-card">
     <i class="fas fa-atom feature-icon"></i>
     <h3>Atomic Explorer</h3>
-    <p>A desktop application for Linux designed for science popularization. Visually explore the atomic structure at different levels of complexity.</p>
+    <p>Visually explore the atomic structure at different levels of complexity.</p>
   </a>
 
   <a href="https://arrase.github.io/blackhole/" class="feature-card">
