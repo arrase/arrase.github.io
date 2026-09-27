@@ -53,6 +53,12 @@ A collection of tools and applications built with passion.
     <p>A desktop application for Linux designed for science popularization. Visually explore the atomic structure at different levels of complexity.</p>
   </a>
 
+  <a href="https://arrase.github.io/blackhole/" class="feature-card">
+    <i class="fas fa-circle-dot feature-icon"></i>
+    <h3>Blackhole</h3>
+    <p>Real-time relativistic simulation of a spinning supermassive black hole (Kerr metric) directly in the web browser using WebGL and GLSL shaders.</p>
+  </a>
+
   <a href="/openclaw-voice" class="feature-card">
     <i class="fas fa-microphone-lines feature-icon"></i>
     <h3>OpenClaw Voice</h3>
