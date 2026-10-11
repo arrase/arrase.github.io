@@ -35,6 +35,12 @@ A collection of tools and applications built with passion.
     <p>A system-tray utility for Linux that records voice dictations, structures them using a local Gemma 4 model via Ollama, and automatically saves them to your Obsidian vault.</p>
   </a>
 
+  <a href="/github-monitor" class="feature-card">
+    <i class="fab fa-github feature-icon"></i>
+    <h3>GitHub Monitor</h3>
+    <p>A system-tray utility for Linux that watches your GitHub repositories and shows how many pull requests and issues are waiting for a reply, with desktop notifications for new ones.</p>
+  </a>
+
   <a href="/ollama-agent" class="feature-card">
     <i class="fas fa-robot feature-icon"></i>
     <h3>Ollama Agent</h3>
