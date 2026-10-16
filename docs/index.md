@@ -17,6 +17,12 @@ A collection of tools and applications built with passion.
     <p>A modern, high-performance USB Gadget and DuckyScript/HIDScript execution appliance for Raspberry Pi, with zero-reboot ConfigFS support, dual scripting engines (JS & DuckyScript), and embedded web UI.</p>
   </a>
 
+  <a href="/ollama-agent" class="feature-card">
+    <i class="fas fa-robot feature-icon"></i>
+    <h3>Ollama Agent</h3>
+    <p>A powerful command-line tool (CLI and REPL) that allows you to interact with local AI models through an Ollama-compatible API. Features tool support, vision, and memory.</p>
+  </a>
+
   <a href="/code-reducer" class="feature-card">
     <i class="fas fa-file-code feature-icon"></i>
     <h3>Code Reducer</h3>
@@ -45,12 +51,6 @@ A collection of tools and applications built with passion.
     <i class="fab fa-github feature-icon"></i>
     <h3>GitHub Monitor</h3>
     <p>A system-tray utility for Linux that watches your GitHub repositories and shows how many pull requests and issues are waiting for a reply, with desktop notifications for new ones.</p>
-  </a>
-
-  <a href="/ollama-agent" class="feature-card">
-    <i class="fas fa-robot feature-icon"></i>
-    <h3>Ollama Agent</h3>
-    <p>A powerful command-line tool (CLI and REPL) that allows you to interact with local AI models through an Ollama-compatible API. Features tool support, vision, and memory.</p>
   </a>
 
   <a href="/Geotify" class="feature-card">
