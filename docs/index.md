@@ -35,6 +35,12 @@ A collection of tools and applications built with passion.
     <p>A system-tray utility for Linux that records voice dictations, structures them using a local Gemma 4 model via Ollama, and automatically saves them to your Obsidian vault.</p>
   </a>
 
+  <a href="/semsearch" class="feature-card">
+    <i class="fas fa-magnifying-glass-chart feature-icon"></i>
+    <h3>SemSearch</h3>
+    <p>A fast, 100% local, keyboard-driven multimodal semantic search engine for the Linux desktop. Find documents, PDFs, screenshots, photos, audio, videos, and source code by meaning via Ollama.</p>
+  </a>
+
   <a href="/github-monitor" class="feature-card">
     <i class="fab fa-github feature-icon"></i>
     <h3>GitHub Monitor</h3>
