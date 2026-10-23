@@ -1,0 +1,125 @@
+site_url: https://arrase.github.io
+github_url: https://github.com/arrase
+
+hero:
+  eyebrow_icon: fa-solid fa-terminal
+  eyebrow: Open Source Engineering & Local AI
+  title: Life is the ultimate side project.
+  subtitle: A curated collection of local-first AI agents, Linux desktop utilities, hardware appliances, and interactive physics simulations built with passion.
+
+sections:
+  - title: Featured Projects & Documentation
+    subtitle: Full technical guides & architecture
+    projects:
+      - name: Raspiducky
+        repo: Raspiducky
+        url: /Raspiducky
+        icon: fas fa-microchip
+        badge: Docs →
+        description: A modern, high-performance USB Gadget and DuckyScript/HIDScript execution appliance for Raspberry Pi, with zero-reboot ConfigFS support, dual scripting engines (JS & DuckyScript), and embedded web UI.
+        tags:
+          - Go
+          - ConfigFS
+          - USB Gadget
+
+      - name: Ollama Agent
+        repo: ollama-agent
+        url: /ollama-agent
+        icon: fas fa-robot
+        badge: Docs →
+        description: A powerful command-line tool (CLI and REPL) that allows you to interact with local AI models through an Ollama-compatible API. Features tool support, vision, and memory.
+        tags:
+          - Python
+          - Ollama
+          - MCP / RAG
+
+      - name: Code Reducer
+        repo: code-reducer
+        url: /code-reducer
+        icon: fas fa-file-code
+        badge: Docs →
+        description: A lightweight, high-performance command-line tool written in Go that automatically generates developer-friendly wikis for extensive repositories using local LLMs.
+        tags:
+          - Go
+          - Ollama
+          - Map-Reduce
+
+      - name: Cud
+        repo: cud
+        url: /cud
+        icon: fas fa-users-gear
+        badge: Docs →
+        description: A lightweight, local-first OpenClaw-like multi-agent framework powered by Ollama. Build specialized agents with persistent memory, tool-calling support, and MCP integration.
+        tags:
+          - Python
+          - Multi-Agent
+          - Ollama
+
+      - name: Eloquent Notes
+        repo: eloquent-notes
+        url: /eloquent-notes
+        icon: fas fa-note-sticky
+        badge: Docs →
+        description: A system-tray utility for Linux that records voice dictations, structures them using a local Gemma 4 model via Ollama.
+        tags:
+          - Python
+          - PyQt6
+          - Gemma 4
+
+      - name: SemSearch
+        repo: semsearch
+        url: /semsearch
+        icon: fas fa-magnifying-glass-chart
+        badge: Docs →
+        description: A fast, 100% local, keyboard-driven multimodal semantic search engine for the Linux desktop. Find documents, PDFs, screenshots, photos, audio, videos, and source code by meaning via Ollama.
+        tags:
+          - Python
+          - PySide6
+          - Multimodal
+
+      - name: GitHub Monitor
+        repo: github-monitor
+        url: /github-monitor
+        icon: fab fa-github
+        badge: Docs →
+        description: A system-tray utility for Linux that watches your GitHub repositories and shows how many pull requests and issues are waiting for a reply, with desktop notifications for new ones.
+        tags:
+          - Python
+          - GraphQL
+          - Linux Tray
+
+      - name: Geotify
+        repo: Geotify
+        url: /Geotify
+        icon: fas fa-map-location-dot
+        badge: Docs →
+        description: A modern, location-aware Android app for geofenced reminders, featuring a Jetpack Compose UI, interactive maps, and system-level Jetpack AppFunctions for assistant-driven control.
+        tags:
+          - Kotlin
+          - Jetpack Compose
+          - Android
+
+  - title: Interactive Web Simulations
+    subtitle: Real-time browser physics & rendering
+    projects:
+      - name: Blackhole
+        repo: blackhole
+        url: https://arrase.github.io/blackhole/
+        icon: fas fa-circle-dot
+        badge: Live Sim ↗
+        description: Real-time relativistic simulation of a spinning supermassive black hole (Kerr metric) directly in the web browser using WebGL and GLSL shaders.
+        tags:
+          - WebGL
+          - GLSL
+          - Kerr Metric
+
+      - name: Atomic Explorer
+        repo: atomic-explorer
+        url: /atomic-explorer
+        icon: fas fa-atom
+        badge: Live Sim ↗
+        description: Visually explore the atomic structure at different levels of complexity with interactive 3D quantum and Bohr orbital visualizations.
+        tags:
+          - Rust
+          - WASM
+          - 3D Physics

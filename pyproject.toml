@@ -1,0 +1,9 @@
+[project]
+name = "arrase-portal"
+version = "0.1.0"
+description = "Arrase GitHub Pages portal and profile README generator"
+requires-python = ">=3.11"
+dependencies = [
+    "mkdocs-material>=9.5",
+    "pyyaml>=6.0",
+]

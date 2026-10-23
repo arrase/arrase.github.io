@@ -1,4 +1,4 @@
-name: Deploy MkDocs to GitHub Pages
+name: Deploy MkDocs to GitHub Pages & Sync Profile
 
 on:
   push:
@@ -31,12 +31,13 @@ jobs:
           python-version: "3.x"
 
       - name: Install dependencies
-        run: |
-          pip install mkdocs-material
+        run: pip install .
+
+      - name: Generate portal index and profile README
+        run: python generate.py
 
       - name: Build documentation
-        run: |
-          mkdocs build
+        run: mkdocs build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -46,3 +47,23 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Sync README to arrase/arrase profile repository
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.PROFILE_DEPLOY_KEY }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          export GIT_SSH_COMMAND="ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=yes"
+
+          git clone git@github.com:arrase/arrase.git /tmp/arrase-profile
+          rm -rf /tmp/arrase-profile/assets
+          cp README.md /tmp/arrase-profile/README.md
+          cp -r assets /tmp/arrase-profile/assets
+          cd /tmp/arrase-profile
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md assets
+          git diff --staged --quiet || (git commit -m "Sync profile README and SVG cards from arrase.github.io" && git push origin main)
