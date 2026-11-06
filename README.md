@@ -25,4 +25,5 @@
 </p>
 <p align="center">
   <a href="https://github.com/arrase/atomic-explorer"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-atomic-explorer-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-atomic-explorer-light.svg"><img alt="Atomic Explorer" src="assets/card-atomic-explorer-dark.svg" width="49%"></picture></a>
+  <a><img alt="" src="assets/card-spacer.svg" width="49%"></a>
 </p>

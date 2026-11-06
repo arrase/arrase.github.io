@@ -255,6 +255,12 @@ def generate_profile_assets_and_readme(data: dict) -> str:
                 row_items.append(
                     f'<a href="{repo_url}">{picture_tag(slug, "49%", project["name"])}</a>'
                 )
+            if len(row_items) == 1:
+                (ASSETS_DIR / "card-spacer.svg").write_text(
+                    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 162" width="460" height="162"/>\n',
+                    encoding="utf-8",
+                )
+                row_items.append('<a><img alt="" src="assets/card-spacer.svg" width="49%"></a>')
             rows.append('<p align="center">\n  ' + "\n  ".join(row_items) + "\n</p>")
         blocks.append("\n".join(rows))
 
