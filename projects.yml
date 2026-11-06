@@ -99,9 +99,20 @@ sections:
           - Jetpack Compose
           - Android
 
-  - title: Interactive Web Simulations
+  - title: Simulations
     subtitle: Real-time browser physics & rendering
     projects:
+      - name: Evolution
+        repo: Evolution
+        url: /Evolution
+        icon: fas fa-dna
+        badge: Docs →
+        description: Interactive bio-cultural and evolutionary population simulator built with Godot 4.7, featuring an isometric hexagonal ecosystem, 6-axis thermodynamics, and a dual-model Ollama cognitive engine.
+        tags:
+          - Godot 4.7
+          - Ollama
+          - Evolutionary AI
+
       - name: Blackhole
         repo: blackhole
         url: https://arrase.github.io/blackhole/

@@ -17,9 +17,12 @@
   <a href="https://github.com/arrase/Geotify"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-geotify-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-geotify-light.svg"><img alt="Geotify" src="assets/card-geotify-dark.svg" width="49%"></picture></a>
 </p>
 
-<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/section-1-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/section-1-light.svg"><img alt="Interactive Web Simulations" src="assets/section-1-dark.svg" width="100%"></picture></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/section-1-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/section-1-light.svg"><img alt="Simulations" src="assets/section-1-dark.svg" width="100%"></picture></p>
 
 <p align="center">
+  <a href="https://github.com/arrase/Evolution"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-evolution-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-evolution-light.svg"><img alt="Evolution" src="assets/card-evolution-dark.svg" width="49%"></picture></a>
   <a href="https://github.com/arrase/blackhole"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-blackhole-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-blackhole-light.svg"><img alt="Blackhole" src="assets/card-blackhole-dark.svg" width="49%"></picture></a>
+</p>
+<p align="center">
   <a href="https://github.com/arrase/atomic-explorer"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-atomic-explorer-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-atomic-explorer-light.svg"><img alt="Atomic Explorer" src="assets/card-atomic-explorer-dark.svg" width="49%"></picture></a>
 </p>

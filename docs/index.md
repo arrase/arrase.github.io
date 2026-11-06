@@ -93,7 +93,7 @@ hide:
         <span class="card-badge">Docs →</span>
       </div>
       <h3>Eloquent Notes</h3>
-      <p>A system-tray utility for Linux that records voice dictations, structures them using a local Gemma 4 model via Ollama, and automatically saves them to your Obsidian vault.</p>
+      <p>A system-tray utility for Linux that records voice dictations, structures them using a local Gemma 4 model via Ollama.</p>
     </div>
     <div class="card-tags">
       <span class="card-tag">Python</span>
@@ -153,11 +153,27 @@ hide:
 </div>
 
 <div class="section-header">
-  <h2>Interactive Web Simulations</h2>
+  <h2>Simulations</h2>
   <span>Real-time browser physics &amp; rendering</span>
 </div>
 
 <div class="projects-grid">
+
+  <a href="/Evolution" class="feature-card">
+    <div>
+      <div class="card-top">
+        <i class="fas fa-dna feature-icon" aria-hidden="true"></i>
+        <span class="card-badge">Docs →</span>
+      </div>
+      <h3>Evolution</h3>
+      <p>Interactive bio-cultural and evolutionary population simulator built with Godot 4.7, featuring an isometric hexagonal ecosystem, 6-axis thermodynamics, and a dual-model Ollama cognitive engine.</p>
+    </div>
+    <div class="card-tags">
+      <span class="card-tag">Godot 4.7</span>
+      <span class="card-tag">Ollama</span>
+      <span class="card-tag">Evolutionary AI</span>
+    </div>
+  </a>
 
   <a href="https://arrase.github.io/blackhole/" class="feature-card">
     <div>

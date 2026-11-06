@@ -89,6 +89,10 @@ ICON_PATHS = {
         '<ellipse cx="12" cy="12" rx="9" ry="3.8" transform="rotate(30 12 12)" fill="none" stroke="{c}" stroke-width="1.6"/>'
         '<ellipse cx="12" cy="12" rx="9" ry="3.8" transform="rotate(-30 12 12)" fill="none" stroke="{c}" stroke-width="1.6"/>'
     ),
+    "fas fa-dna": (
+        '<path d="M2 15c6.667-6 13.333 0 20-6M9 22c1.798-1.998 2.518-3.995 2.807-5.993M15 2c-1.798 1.998-2.518 3.995-2.807 5.993" fill="none" stroke="{c}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>'
+        '<path d="m17 6-2.5-2.5M14 8l-1-1M7 18l2.5 2.5M3.5 14.5l.5.5M20 9l.5.5M6.5 12.5l1 1M16.5 10.5l1 1M10 16l1.5 1.5" fill="none" stroke="{c}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>'
+    ),
 }
 
 
@@ -155,10 +159,10 @@ def render_section_svg(section: dict, theme: dict) -> str:
     title = escape(section["title"])
     subtitle = escape(section["subtitle"])
     return (
-        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 896 36" width="896" height="36">\n'
-        f'  <text x="2" y="21" fill="{theme["text_main"]}" font-family="-apple-system, BlinkMacSystemFont, \'Segoe UI\', Inter, sans-serif" font-size="15" font-weight="600" letter-spacing="-0.2">{title}</text>\n'
-        f'  <text x="894" y="21" text-anchor="end" fill="{theme["text_muted"]}" font-family="-apple-system, BlinkMacSystemFont, \'Segoe UI\', Inter, sans-serif" font-size="12">{subtitle}</text>\n'
-        f'  <line x1="0" y1="32" x2="896" y2="32" stroke="{theme["border"]}" stroke-width="1"/>\n'
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 896 38" width="896" height="38">\n'
+        f'  <text x="2" y="22" fill="{theme["text_main"]}" font-family="-apple-system, BlinkMacSystemFont, \'Segoe UI\', Inter, sans-serif" font-size="16.5" font-weight="600" letter-spacing="-0.2">{title}</text>\n'
+        f'  <text x="894" y="22" text-anchor="end" fill="{theme["text_muted"]}" font-family="-apple-system, BlinkMacSystemFont, \'Segoe UI\', Inter, sans-serif" font-size="13.5">{subtitle}</text>\n'
+        f'  <line x1="0" y1="34" x2="896" y2="34" stroke="{theme["border"]}" stroke-width="1"/>\n'
         "</svg>\n"
     )
 
@@ -166,31 +170,33 @@ def render_section_svg(section: dict, theme: dict) -> str:
 def render_card_svg(project: dict, theme: dict) -> str:
     icon_svg = ICON_PATHS[project["icon"]].format(c=theme["accent_primary"])
     badge = "Repo →"
-    badge_w = int(len(badge) * 6.5 + 18)
+    badge_w = int(len(badge) * 7.0 + 18)
     badge_x = 442 - badge_w
     badge_text_x = badge_x + badge_w / 2
 
-    lines = wrap(project["description"], width=72)[:3]
+    lines = wrap(project["description"], width=68)
+    if len(lines) > 3:
+        lines = wrap(project["description"], width=72)[:3]
     desc_nodes = "\n".join(
-        f'  <text x="18" y="{63 + idx * 17.5}" fill="{theme["text_muted"]}" '
-        f'font-family="-apple-system, BlinkMacSystemFont, \'Segoe UI\', Inter, sans-serif" font-size="12.5">{escape(line)}</text>'
+        f'  <text x="18" y="{64 + idx * 18.5}" fill="{theme["text_muted"]}" '
+        f'font-family="-apple-system, BlinkMacSystemFont, \'Segoe UI\', Inter, sans-serif" font-size="13.5">{escape(line)}</text>'
         for idx, line in enumerate(lines)
     )
 
     tag_nodes = []
     tx = 18
     for tag in project["tags"]:
-        tw = int(len(tag) * 6.6 + 16)
+        tw = int(len(tag) * 7.2 + 16)
         tag_nodes.append(
-            f'  <rect x="{tx}" y="124" width="{tw}" height="20" rx="4" fill="{theme["tag_bg"]}" stroke="{theme["tag_border"]}" stroke-width="1"/>\n'
-            f'  <text x="{tx + tw / 2}" y="137.5" text-anchor="middle" fill="{theme["text_muted"]}" '
-            f'font-family="ui-monospace, SFMono-Regular, \'JetBrains Mono\', Menlo, Consolas, monospace" font-size="10.5">{escape(tag)}</text>'
+            f'  <rect x="{tx}" y="128" width="{tw}" height="22" rx="4" fill="{theme["tag_bg"]}" stroke="{theme["tag_border"]}" stroke-width="1"/>\n'
+            f'  <text x="{tx + tw / 2}" y="143.0" text-anchor="middle" fill="{theme["text_muted"]}" '
+            f'font-family="ui-monospace, SFMono-Regular, \'JetBrains Mono\', Menlo, Consolas, monospace" font-size="11.5">{escape(tag)}</text>'
         )
         tx += tw + 6
     tags_svg = "\n".join(tag_nodes)
 
     return (
-        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 156" width="460" height="156">\n'
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 162" width="460" height="162">\n'
         "  <defs>\n"
         '    <linearGradient id="cardLine" x1="0%" y1="0%" x2="100%" y2="0%">\n'
         f'      <stop offset="0%" stop-color="{theme["bg_surface"]}" stop-opacity="0"/>\n'
@@ -198,15 +204,15 @@ def render_card_svg(project: dict, theme: dict) -> str:
         f'      <stop offset="100%" stop-color="{theme["bg_surface"]}" stop-opacity="0"/>\n'
         "    </linearGradient>\n"
         "  </defs>\n"
-        f'  <rect x="1" y="1" width="458" height="154" rx="10" fill="{theme["bg_surface"]}" stroke="{theme["border"]}" stroke-width="1"/>\n'
+        f'  <rect x="1" y="1" width="458" height="160" rx="10" fill="{theme["bg_surface"]}" stroke="{theme["border"]}" stroke-width="1"/>\n'
         '  <rect x="40" y="1" width="380" height="1" fill="url(#cardLine)"/>\n'
         f'  <rect x="18" y="14" width="28" height="28" rx="7" fill="{theme["icon_bg"]}" stroke="{theme["icon_border"]}" stroke-width="1"/>\n'
         f'  <g transform="translate(23, 19) scale(0.75)">{icon_svg}</g>\n'
-        f'  <text x="56" y="33.5" fill="{theme["text_main"]}" font-family="-apple-system, BlinkMacSystemFont, \'Segoe UI\', Inter, sans-serif" font-size="15.5" font-weight="650" letter-spacing="-0.2">{escape(project["name"])}</text>\n'
-        f'  <rect x="{badge_x}" y="17" width="{badge_w}" height="21" rx="10.5" fill="{theme["badge_bg"]}" stroke="{theme["border"]}" stroke-width="1"/>\n'
-        f'  <text x="{badge_text_x}" y="31" text-anchor="middle" fill="{theme["text_muted"]}" font-family="-apple-system, BlinkMacSystemFont, \'Segoe UI\', Inter, sans-serif" font-size="10.5" font-weight="500">{escape(badge)}</text>\n'
+        f'  <text x="56" y="34" fill="{theme["text_main"]}" font-family="-apple-system, BlinkMacSystemFont, \'Segoe UI\', Inter, sans-serif" font-size="16.5" font-weight="650" letter-spacing="-0.2">{escape(project["name"])}</text>\n'
+        f'  <rect x="{badge_x}" y="17" width="{badge_w}" height="22" rx="11" fill="{theme["badge_bg"]}" stroke="{theme["border"]}" stroke-width="1"/>\n'
+        f'  <text x="{badge_text_x}" y="32" text-anchor="middle" fill="{theme["text_muted"]}" font-family="-apple-system, BlinkMacSystemFont, \'Segoe UI\', Inter, sans-serif" font-size="11.5" font-weight="500">{escape(badge)}</text>\n'
         f"{desc_nodes}\n"
-        f'  <line x1="18" y1="114" x2="442" y2="114" stroke="{theme["divider"]}" stroke-width="1"/>\n'
+        f'  <line x1="18" y1="118" x2="442" y2="118" stroke="{theme["divider"]}" stroke-width="1"/>\n'
         f"{tags_svg}\n"
         "</svg>\n"
     )
