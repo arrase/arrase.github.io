@@ -16,6 +16,10 @@
   <a href="https://github.com/arrase/github-monitor"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-github-monitor-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-github-monitor-light.svg"><img alt="GitHub Monitor" src="assets/card-github-monitor-dark.svg" width="49%"></picture></a>
   <a href="https://github.com/arrase/Geotify"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-geotify-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-geotify-light.svg"><img alt="Geotify" src="assets/card-geotify-dark.svg" width="49%"></picture></a>
 </p>
+<p align="center">
+  <a href="https://github.com/arrase/gcp-arch"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-gcp-arch-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-gcp-arch-light.svg"><img alt="GCP Arch" src="assets/card-gcp-arch-dark.svg" width="49%"></picture></a>
+  <a><img alt="" src="assets/card-spacer.svg" width="49%"></a>
+</p>
 
 <p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/section-1-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/section-1-light.svg"><img alt="Simulations" src="assets/section-1-dark.svg" width="100%"></picture></p>
 

@@ -93,6 +93,12 @@ ICON_PATHS = {
         '<path d="M2 15c6.667-6 13.333 0 20-6M9 22c1.798-1.998 2.518-3.995 2.807-5.993M15 2c-1.798 1.998-2.518 3.995-2.807 5.993" fill="none" stroke="{c}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>'
         '<path d="m17 6-2.5-2.5M14 8l-1-1M7 18l2.5 2.5M3.5 14.5l.5.5M20 9l.5.5M6.5 12.5l1 1M16.5 10.5l1 1M10 16l1.5 1.5" fill="none" stroke="{c}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>'
     ),
+    "fas fa-diagram-project": (
+        '<rect x="3" y="3.5" width="6.5" height="5.5" rx="1.4" fill="none" stroke="{c}" stroke-width="1.8"/>'
+        '<rect x="14.5" y="3.5" width="6.5" height="5.5" rx="1.4" fill="none" stroke="{c}" stroke-width="1.8"/>'
+        '<rect x="8.75" y="15" width="6.5" height="5.5" rx="1.4" fill="none" stroke="{c}" stroke-width="1.8"/>'
+        '<path d="M9.5 6.25h5M6.25 9v8.75h2.5M17.75 9v8.75h-2.5" fill="none" stroke="{c}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>'
+    ),
 }
 
 

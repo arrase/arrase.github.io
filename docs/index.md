@@ -150,6 +150,22 @@ hide:
     </div>
   </a>
 
+  <a href="/gcp-arch" class="feature-card">
+    <div>
+      <div class="card-top">
+        <i class="fas fa-diagram-project feature-icon" aria-hidden="true"></i>
+        <span class="card-badge">Docs →</span>
+      </div>
+      <h3>GCP Arch</h3>
+      <p>A standalone Go CLI that discovers read-only GCP topologies, synthesizes multi-view architectures with Gemini 4 on Vertex AI, and renders offline PDF, 3x PNG, and HTML dossiers.</p>
+    </div>
+    <div class="card-tags">
+      <span class="card-tag">Go</span>
+      <span class="card-tag">GCP</span>
+      <span class="card-tag">Vertex AI</span>
+    </div>
+  </a>
+
 </div>
 
 <div class="section-header">

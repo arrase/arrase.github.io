@@ -99,6 +99,17 @@ sections:
           - Jetpack Compose
           - Android
 
+      - name: GCP Arch
+        repo: gcp-arch
+        url: /gcp-arch
+        icon: fas fa-diagram-project
+        badge: Docs →
+        description: A standalone Go CLI that discovers read-only GCP topologies, synthesizes multi-view architectures with Gemini 4 on Vertex AI, and renders offline PDF, 3x PNG, and HTML dossiers.
+        tags:
+          - Go
+          - GCP
+          - Vertex AI
+
   - title: Simulations
     subtitle: Real-time browser physics & rendering
     projects:
